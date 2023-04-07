@@ -12,6 +12,8 @@
     递归条件：按照最大边进行划分，分出的最小块地，再按照最大边划分，分出最小块地....
 
 """
+
+
 # D&C算法应用
 def sum_num(arr):
     """
@@ -19,3 +21,10 @@ def sum_num(arr):
     :param arr:
     :return:
     """
+    total = 0
+    for x in arr:
+        total += x
+    return total
+
+
+print(sum_num([1, 2, 3, 4]))
